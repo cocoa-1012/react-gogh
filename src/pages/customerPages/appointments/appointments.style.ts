@@ -1,0 +1,132 @@
+import { makeStyles, Theme } from '@material-ui/core';
+import { primaryTextColor } from '../../../constants/colors';
+
+export default makeStyles((theme: Theme) => ({
+  pageTitle: {
+    fontSize: 36,
+    fontWeight: 'bold',
+    color: primaryTextColor,
+    marginBottom: 30,
+  },
+  pageContainer: {
+    padding: '50px 40px',
+    minHeight: 'calc(100vh - 130px)',
+    '@media (max-width: 780px)': {
+      padding: '20px 10px',
+      justifyContent: 'center',
+    },
+  },
+  kurac: {
+    '@media (max-width: 780px)': {
+      justifyContent: 'center',
+    },
+  },
+
+  buttonsView: {
+    '@media (max-width: 780px)': {
+      justifyContent: 'center',
+    },
+  },
+
+  dataPicker: {
+    width: '244px',
+    height: '50px',
+    margin: '0 30px 0 0',
+    padding: '8px 10px',
+    borderRadius: '10px',
+    border: 'solid 2px #e4e6f2',
+  },
+  search: {
+    width: '244px',
+    height: '50px',
+    '& .MuiInputBase-root': {
+      height: '100%',
+    },
+  },
+  view: {
+    width: '36px',
+    height: ' 18px',
+    marginRight: '18px',
+    fontFamily: 'Montserrat',
+    fontSize: 14,
+    fontWeight: 600,
+    fontStretch: 'normal',
+    fontStyle: 'normal',
+    lineHeight: 'normal',
+    letterSpacing: 'normal',
+    textAlign: 'left',
+    color: '#b7bbd8',
+  },
+  sheduleButton: {
+    width: '176px',
+    height: '50px',
+    margin: '0 30px 0 30px',
+    padding: '16px 20px',
+    borderRadius: '10px',
+    boxShadow: '0 10px 30px 0 rgba(34, 85, 255, 0.25)',
+    backgroundColor: ' #2255ff',
+    color: '#fff',
+    fontSize: '14px',
+    fontWeight: 600,
+    textTransform: 'none',
+    '&:hover': {
+      backgroundColor: '#2255ff',
+      color: '#fff',
+    },
+  },
+  box: {
+    width: '50px',
+    height: '50px',
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  boxViewLeft: {
+    width: '50px',
+    height: '50px',
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: '10px 0 0 10px',
+    border: 'solid 2px #e4e6f2',
+    cursor: 'pointer',
+  },
+  boxViewRight: {
+    width: '50px',
+    height: '50px',
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: '0 10px 10px 0',
+    border: 'solid 2px #e4e6f2',
+    backgroundColor: '#e4e6f2',
+    cursor: 'pointer',
+  },
+  boxSettings: {
+    width: '50px',
+    height: '50px',
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: ' 10px',
+    border: 'solid 2px #e4e6f2',
+    cursor: 'pointer',
+  },
+  dayTitle: {
+    width: '61px',
+    height: '24px',
+    margin: '40px 213px 20px 40px',
+    fontSize: '20px',
+    fontWeight: 600,
+    fontStretch: 'normal',
+    fontStyle: 'normal',
+    lineHeight: 'normal',
+    letterSpacing: 'normal',
+    textAlign: 'left',
+    color: '#3a3f5c',
+  },
+}));

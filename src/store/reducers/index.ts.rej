@@ -1,0 +1,9 @@
+diff a/src/store/reducers/index.ts b/src/store/reducers/index.ts	(rejected hunks)
+@@ -1,7 +1,6 @@
+ import { combineReducers } from "redux";
+ import { additionalBusinessInfo, businessInfo, componyInfo, customerInfo } from "./businessInfo";
+ import { customers, getSubscriptions } from "./customers";
+-import { getCompanyMessages, getConversations, getCustomerConverSations, getCustomerMessages, messages, setReceiverId } from "./messages";
+ import { getConversations, getCustomerConverSations, getCustomerMessages, messages, setReceiverId } from "./messages";
+ import { myServices } from "./myServices";
+ import { currentUser, currentUserName, imageUrls } from "./userReducers";

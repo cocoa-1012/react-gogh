@@ -1,0 +1,211 @@
+import { makeStyles } from "@material-ui/core";
+import { primaryTextColor, secondaryColor } from "../../../constants/colors";
+import logoSectionBgImage from "../../../assets/images/whole-background.svg";
+
+export default makeStyles((theme) => ({
+  logoSectionContainer: {
+    width: "55%",
+    minHeight: "100%",
+    padding: "120px 0 50px 0",
+    backgroundImage: `url(${logoSectionBgImage})`,
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    '@media (max-width: 930px)': {
+        width: "100%",
+        padding: "60px 0 20px 0",
+        minHeight: "auto",
+    },
+  },
+  logoImageWrapper: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  loginLogoText: {
+    color: "white",
+    fontSize: 16,
+    fontWeight: "bold",
+    marginLeft: 15,
+  },
+  macbookImage: {
+    marginTop: 50,
+    '@media (max-width: 1200px)': {
+        width: "98%",
+    },
+  },
+  logoSectionTextTitle: {
+    fontSize: 28,
+    fontWeight: "bold",
+    color: "white",
+    marginTop: 20,
+  },
+  logoSectionTextDescription: {
+    fontSize: 16,
+    fontWeight: 100,
+    color: "white",
+    width: "60%",
+    textAlign: "center",
+    marginTop: 20,
+  },
+  sliderNavigationDotWrapper: {
+    width: 70,
+    marginTop: 100,
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  sliderNavigation: {
+    width: 10,
+    height: 10,
+    borderRadius: 50,
+    backgroundColor: "#999999",
+    cursor: "pointer",
+  },
+  sliderNavigationActive: {
+    backgroundColor: "white",
+  },
+  formSectionContainer: {
+    width: "45%",
+    minHeight: "100%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: "30px 0",
+    '@media (max-width: 930px)': {
+        width: "100%",
+        minHeight: "auto",
+    },
+  },
+  loginForm: {
+    width: "70%",
+    '@media (max-width: 1200px)': {
+        width: "90%",
+    },
+  },
+  loginTitle: {
+    fontSize: 36,
+    fontWeight: "bold",
+    color: primaryTextColor,
+    width: "100%",
+    textAlign: "left",
+    margin: 0,
+  },
+  loginDescription: {
+    width: "100%",
+    textAlign: "left",
+    marginTop: 15,
+    marginBottom: 15,
+    fontSize: 20,
+    fontWeight: "bolder",
+    color: primaryTextColor,
+  },
+  forgotPasswordContainer: {
+    width: "100%",
+    marginTop: 15,
+  },
+  forgotPassword: {
+    fontSize: 12,
+    fontWeight: "bold",
+    cursor: "pointer",
+    color: primaryTextColor,
+  },
+  splitingLineWrapper: {
+    width: "100%",
+    margin: "15px 0",
+  },
+  splitingLine: {
+    height: 2,
+    flex: 1,
+    backgroundColor: "#F8F8FA",
+    border: "none",
+  },
+  splitingText: {
+    padding: "0px 20px",
+  },
+  socialLoginContainer: {
+    width: "100%",
+  },
+  socialLoginButton: {
+    width: "48%",
+    padding: "15px 20px",
+    backgroundColor: "white",
+    boxShadow: "4px 2px 20px #E4E6F2",
+    borderRadius: 20,
+    cursor: "pointer",
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "flex-start",
+    alignItems: "center",
+    [theme.breakpoints.down("md")]: {
+      width: "100%",
+      marginBottom: 10,
+    },
+    '@media (max-width: 930px)': {
+        width: "48%",
+    },
+    '@media (max-width: 400px)': {
+        width: "100%",
+    },
+  },
+  socialLoginText: {
+    marginLeft: 20,
+    fontSize: 14,
+    fontWeight: 600,
+    color: primaryTextColor,
+    flex: 1,
+  },
+  qrCodeContainer: {
+    width: "100%",
+    padding: "30px 0",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#E4E6F2",
+    borderRadius: 10,
+    marginTop: 30,
+  },
+  qrScanText: {
+    margin: 0,
+    marginTop: 20,
+    fontSize: 12,
+    fontWeight: 600,
+    color: primaryTextColor,
+  },
+  loginButton: {
+    width: "100%",
+    marginTop: 30,
+    padding: "10px 0",
+    textAlign: "center",
+    borderRadius: 10,
+    border: "none",
+    backgroundColor: "#2255FF",
+    color: "white",
+    fontSize: 14,
+    cursor: "pointer",
+    "&:focus": {
+      outline: "none",
+    },
+  },
+  goSignupText: {
+    fontSize: 12,
+    width: "100%",
+    textAlign: "center",
+    marginTop: 50,
+    color: "#707070",
+  },
+  goSignupButton: {
+    fontWeight: "bold",
+    color: "#2255FF",
+    cursor: "pointer",
+  },
+  inputErrorMessage: {
+    fontSize: 12,
+    fontWeight: "bold",
+    color: secondaryColor,
+  },
+}));
